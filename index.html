@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <!--Font awesome icons Cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font icon means that it only contians icons and not letters or numbers-->
+
+    <!--Customm Css-->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <div class="wrapper">
+            <!--Logo-->
+            <div class="logo">
+                <div class="container">
+                    <p>Movie<span>corn.</span><a href="https://www.google.com/"><span id="Log">Login/Registration</span></a></p>
+                </div>
+            </div>
+            <!--End of logo-->
+            
+            <!--Search Contianer-->
+            <div class="search-container">
+                <div class="search-element">
+                    <h3>Search Movie:</h3>
+                    <input type="text" class = "form-control" placeholder="Search Movie Title..." id = "movie-search-box" onclick="findMovies()" > <!--can also use onkeyup this will evoke the function when i stop pressing the keys.-->
+                    <div class="search-list" id = "search-list">
+                        <!-- <div class="search-list-item">
+                            <div class="search-item-thumbnail">
+                                <img src="gogv2.jpg" alt="Check your internet connection">
+                            </div>
+                            <div class="search-item-info">
+                                <h3>Guardians of Galaxy volume 2</h3>
+                                <p>2017</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!--End of Search Container-->
+
+            <!--Result Contianer-->
+            <div class="container">
+                <div class="result-container">
+                    <div class="result-grid" id = "result-grid">
+                        <!--Movie Informtion Here-->
+                        <!-- <div class="movie-poster">
+                            <img src="gogv2.jpg" alt="Movie-Poster">
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Guardians of Galaxy Volume 2</h3>
+                            <ul class="movie-misc-info">
+                                <li class="year">Year: 2017</li>
+                                <li class="rated">Ratings: PG-13</li>
+                                <li class="released">Released: 05 May 2017</li>
+                            </ul>
+                            <p class="genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                            <p class="writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                            <p class="actors"><b>Actors:</b> Chriss Pratt, Zoe Saldana, Vin Diesel</p>
+                            <p class="plot"><b>Plot: </b>The Guardians strrugle to keep together as a teem while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitiois celestial being Ego.</p>
+                            <p class="language"><b>Language:</b> English</p>
+                            <p class="awards"><b><i class="fas fa-award"></i></b> Nominated for 1 Oscar</p>Fas fa award will create a award font icon-->
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!--End of Result Contianer-->
+        </div>
+
+
+    <!--Movie app JavaScript-->
+    <script src = "script.js"></script>
+</body>
+</html>

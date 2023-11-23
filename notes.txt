@@ -1,0 +1,16 @@
+We cant put a paragraph element inside any other paragraph element. If we do so the text behind the start
+of new paragraph element is considered as 1st paragrpah and the content isnide new <p> is cosnidered as
+2nd paragraph and they appear in different lines
+
+
+This CSS declaration grid-template-columns: repeat(2,1fr); creates a grid container with two columns of equal width, where each column will occupy an equal portion of the available space within the container.
+The repeat() function is used to define a repeating pattern for the grid columns, and it takes two arguments: the first argument specifies the number of times the pattern should be repeated, and the second argument defines the size of each grid track. In this case, the pattern is repeated twice and the size of each track is set to 1fr, which means that each column will occupy an equal fraction of the available space in the grid container.
+The fr unit stands for "fractional unit" and is a flexible unit that allows the grid tracks to scale according to the available space. So, in this case, each column will take up half of the available space in the grid container.
+
+
+
+In simpler terms, an API provides a way for one software application to talk to another software application. This allows developers to build new applications by using the functionality provided by existing applications or services, rather than building everything from scratch.
+Postman is important in creating and managing  API requests, it supports a wide range of API development workflows, from simple get requests to complex API testing and automation.
+
+Express.js is a popular open-source web application framework for Node.js, which is a JavaScript runtime built on Chrome's V8 JavaScript engine. Express.js simplifies the process of building web applications by providing a set of powerful features and tools that help developers create dynamic web applications quickly and easily.
+It helps in request handling and routing etc.
