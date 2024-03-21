@@ -1,5 +1,4 @@
-//Titles : http://www.omdbapi.com/?s=spiderman&apikey=a115d514
-//Description: http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=a115d514
+
 const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('search-list');
 const resultGrid = document.getElementById('result-grid');
@@ -11,7 +10,7 @@ console.log(resultGrid);
 
 // load movies from API
 async function loadMovies(searchTerm){
-    const URL = `http://www.omdbapi.com/?s=${searchTerm}&apikey=a115d514`;
+    //Creating the url variable using the wrl of omdb and the api key
     const res = await fetch(`${URL}`);
     const data = await res.json();
     // console.log(data.Search);
@@ -66,7 +65,9 @@ function loadMovieDetails(){
             searchList.classList.add('hide-search-list');
             movieSearchBox.value = "";
             //getting the details
-            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=a115d514`);    
+
+            //Api key removed from here used to get result var by sending a fetch request to omdb
+        
             const movieDetails = await result.json();
             console.log(movieDetails);
             displayMovieDetails(movieDetails);
